@@ -1,0 +1,17 @@
+[Unit]
+Description=Voice Unlock Daemon for KDE Plasma 6 (Wayland)
+Documentation=https://github.com/zxcvmh/OpenTheDoor
+After=graphical-session.target pipewire.service wireplumber.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/home/zxcvmh/Projects/OpenTheDoor/.venv/bin/python /home/zxcvmh/Projects/OpenTheDoor/voice_unlock_daemon.py
+WorkingDirectory=/home/zxcvmh/Projects/OpenTheDoor
+Restart=always
+RestartSec=3s
+Environment=PYTHONUNBUFFERED=1
+Environment="LD_LIBRARY_PATH=/home/zxcvmh/Projects/OpenTheDoor/.venv/lib/python3.11/site-packages/nvidia/cudnn/lib:/home/zxcvmh/Projects/OpenTheDoor/.venv/lib/python3.11/site-packages/nvidia/cublas/lib"
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C-extensions
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Downloaded AI Models & Cache
+models/
+.cache/
+huggingface/
+
+# Configuration (user-specific passphrases)
+config.json
+
+# Audio and temporary records
+*.wav.tmp
+/tmp/
+
+# OS-specific
+.directory
+.DS_Store
+.Trash-*
+*~
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

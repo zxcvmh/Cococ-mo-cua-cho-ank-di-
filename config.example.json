@@ -1,0 +1,20 @@
+{
+  "passphrases": [
+    "cốc cốc mở cửa cho anh đê",
+    "cốc cốc mở cửa cho anh đi",
+    "cốc cốc mở cửa",
+    "mở cửa cho anh đê"
+  ],
+  "similarity_threshold": 0.80,
+  "model_size": "small",
+  "device": "cuda",
+  "compute_type": "float16",
+  "block_size": 512,
+  "silence_timeout": 1.5,
+  "speech_threshold": 0.50,
+  "silence_threshold": 0.30,
+  "autostart": true,
+  "battery_timeout_seconds": 600,
+  "chime_enabled": true,
+  "chime_file": "assets/chime.wav"
+}
